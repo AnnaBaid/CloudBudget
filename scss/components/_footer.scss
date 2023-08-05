@@ -1,0 +1,72 @@
+.footer {
+    background: #FAFAFA;
+    padding: 85px 31px 86px 0;
+
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(216px, 1fr));
+        gap: 30px;
+        
+        @include desktop-small {
+            gap: 20px;
+        }
+        
+        @include tablet {
+            flex-direction: column;
+            margin-inline: auto;
+        }
+    }
+
+    &__title, &__info-header, &__touch-header, &__suport-title {
+        color: #101010;
+        font-family: var(--ff);
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 33px;
+    }
+
+    &__desc {
+        color: #101010;
+        font-family: var(--ff);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 150%;
+        margin-bottom: 141px;
+        max-width: 180px;
+        @include desktop-small {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__adress {
+        color: #101010;
+        font-family: var(--ff);
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    &__info-value {
+        margin-bottom: 10px;
+        color: var(--c-black);
+        font-family: var(--ff);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 160%;
+        text-transform: capitalize;
+    }
+
+    &__touch-value {
+        color: #101010;
+        font-family: var(--ff);
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 11px;
+    }
+
+    &__media {
+        display: flex;
+        gap: 12px;
+        margin-top: 18px;
+    }
+}

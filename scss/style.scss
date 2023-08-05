@@ -1,0 +1,21 @@
+// vendors
+@import 'vendors/reset';
+
+// utils
+@import 'utils/vars';
+@import 'utils/mixins';
+
+// layout
+@import 'layout/base';
+@import 'layout/scroll';
+@import 'layout/grid';
+
+// components
+@import 'components/header';
+@import 'components/common';
+@import 'components/featur';
+@import 'components/technology';
+@import 'components/cloud';
+@import 'components/money';
+@import 'components/contact';
+@import 'components/footer';

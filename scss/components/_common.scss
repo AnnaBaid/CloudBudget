@@ -1,0 +1,101 @@
+.main-screen {
+    padding-top: 17px;
+    position: relative;
+    margin-bottom: 94px;
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.80) 0%, rgba(238, 61, 27, 0.80) 100%);
+    &__title {
+        margin-top: 140px;        
+        color: var(--c-white);
+        text-align: center;
+        font-family: var(--ff);
+        font-size: 72px;
+        font-weight: 700;
+        letter-spacing: 3.6px;
+        text-transform: uppercase;
+        @include tablet {
+            font-size: 36px;
+        }
+    }
+    &__desc {
+        margin-top: 39px;
+        color: var(--c-white);
+        text-align: center;
+        font-family: var(--ff);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 150%;
+        max-width: 486px;
+        margin-inline: auto;
+        margin-bottom: 39px;
+        @include tablet {
+            font-size: 18px;
+        }
+    }
+
+    &__btn {
+        text-align: center;
+    }
+   
+    &__bg {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        object-fit: cover;
+        height: 100%;
+    }
+    .container {
+        z-index: 2;
+        position: relative;
+        padding-bottom: 187px;
+    }
+
+    a {
+        color: #fff;
+    }
+}
+
+.btn {  
+    font-family: var(--ff);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 11px 29px;
+    background: transparent;
+    outline: 0;
+    display: inline-block;
+    cursor: pointer;
+
+    &._primary {
+        color: var(--c-white);
+        border-radius: 6px;
+        border: 1px solid #FFF;        
+    }
+
+    &._secondary {
+        background: var(--c-white);
+        color: #ED4C5C;
+        font-weight: 600;
+        padding: 17px 56px;
+    }
+    &._third {
+        color: var(--c-white);
+        font-family: var(--ff);
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        background: var(--c-primary);
+        padding: 17px 34px;
+        border-radius: 6px;
+        border: 1.5px solid #ED4C5C;
+    }
+
+}
+
+.title {
+    color: var(--c-black);
+    text-align: center;
+    font-family: var(--ff);
+    font-size: 36px;
+    font-weight: 600;
+}

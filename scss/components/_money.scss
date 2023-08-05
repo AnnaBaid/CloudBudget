@@ -1,0 +1,43 @@
+.money-section {
+    background: var(--c-primary);
+    padding: 95px 0;
+}
+
+.money {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 125px;
+    @include tablet {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    &__info {
+        max-width: 445px;
+    }
+
+    &__title {
+        color: var(--c-white);
+        font-family: var(--ff);
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 45px;
+    }
+
+    &__desc {
+        color: var(--c-white);
+        text-align: justify;
+        font-family: var(--ff);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 140%;
+        margin-bottom: 40px;
+    }
+
+    &__media {
+        display: flex;
+        gap: 23px;
+    }
+
+}
