@@ -50,13 +50,18 @@
     &__img {
         border-radius: 15px;
         background: url(<path-to-image>), lightgray 50% / cover no-repeat, #C4C4C4;
-        position: relative;
-        z-index: 0;
+         position: relative;
     }
 
-    &__video {
+    &__medio {
+       
+    }
+
+    &__a {
         position: absolute;
-        right: 44%;
         z-index: 1;   
+        top: 50%;
+        transform: translateY(-50%);
+        left: -33px;
     }
 }
